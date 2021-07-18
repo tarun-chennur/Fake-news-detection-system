@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Fake News Detector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        height: 100vh;
+        padding: 0;
+        font-family: 'Rubik', sans-serif;
+    }
+    h1{
+        color: #4361ee;
+    }
+    label{
+        font-size: 20px;
+        color: #3a0ca3;
+    }
+    button{
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="container mt-5 mb-5">
+        <h1 class="m-2 ">Fake News Detector</h1>
+        <div class="container mt-5 mb-5">
+                <form action="" method="POST">
+                    <label for="textInputArea" class="form-label">Enter Your Article or Text:</label>
+                    <textarea class="form-control" name="inptext" rows="5"></textarea>            
+                    <button type="submit" class="btn btn-primary mt-3 mb-2">
+                        Check
+                    </button>
+                </form>
+        </div>     
+        <div class="container">
+            <p class="result">
+                Result:{{ Result }}
+            </p>
+        </div>
+    </div> 
+    <!-- Bootstrap Js file (if needed) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+</html>
