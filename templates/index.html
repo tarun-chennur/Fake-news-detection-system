@@ -33,7 +33,7 @@
         <div class="container mt-5 mb-5">
                 <form action="/query" method="POST">
                     <label for="textInputArea" class="form-label">Enter Your Article or Text:</label>
-                    <textarea class="form-control" name="inptext" rows="5"></textarea>            
+                    <textarea class="form-control" name="inptext" rows="5">{{ text }}</textarea>            
                     <button type="submit" class="btn btn-primary mt-3 mb-2">
                         Check
                     </button>
@@ -41,7 +41,7 @@
         </div>     
         <div class="container">
             <p class="result">
-                Result: {{ Result }}
+                Result:{{ Result }}
             </p>
         </div>
     </div> 

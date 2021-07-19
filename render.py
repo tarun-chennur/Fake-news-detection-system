@@ -15,7 +15,7 @@ def form_open():
 def my_form_post():
     text = request.form['inptext']
     res = manual_testing(text)
-    return render_template('index.html',Result=res)
+    return render_template('index.html',Result=res, text = text)
 
 def wordopt(text):
     text = text.lower()
