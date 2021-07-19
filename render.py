@@ -11,11 +11,11 @@ app = Flask(__name__)
 def form_open():
     return render_template('index.html')
 
-@app.route('/', methods=['POST'])
+@app.route('/query', methods=['POST'])
 def my_form_post():
     text = request.form['inptext']
     res = manual_testing(text)
-    return res
+    return render_template('index.html',Result=res)
 
 def wordopt(text):
     text = text.lower()
